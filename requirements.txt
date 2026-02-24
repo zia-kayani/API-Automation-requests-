@@ -1,0 +1,9 @@
+pytest
+jsonpath-ng
+lxml
+jsonschema
+google-auth
+faker
+pytest
+pytest-order
+pytest-dependency
