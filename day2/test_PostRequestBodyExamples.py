@@ -1,10 +1,8 @@
-
 import requests
 import json
 
 BASE_URL = "http://localhost:3000/students"
 USER_ID = None
-
 HEADERS = {"Content-type": "application/json"}
 
 #Post request with Dictionary 
@@ -19,7 +17,8 @@ def test_createStudentUsingDictionary():
                 ]
     }   
 
-    res = requests.post(url=BASE_URL, json=REQUEST_BODY)
+    # res = requests.post(url=BASE_URL, json=REQUEST_BODY)
+    res = requests.post(url=BASE_URL ,  data=json.dumps(REQUEST_BODY), headers=HEADERS)
 
     assert res.status_code == 201, "status code is not 201"
     data  = res.json()
