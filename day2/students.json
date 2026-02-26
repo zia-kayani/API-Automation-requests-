@@ -1,24 +1,34 @@
 {
-    "students" : [
-        {
-            "id":"1",
-            "name":"zia",
-            "location":"kashmir",
-            "phone": "031111111",
-            "courses" : [
-                "Python",
-                "Playwright"
-            ]
-        },
-          {
-            "id":"2",
-            "name":"Asad",
-            "location":"pakistan",
-            "phone": "0322222222",
-            "courses" : [
-                "Java",
-                "Selenium"
-            ]
-        }
-    ]
+  "students": [
+    {
+      "id": "1",
+      "name": "zia",
+      "location": "kashmir",
+      "phone": "031111111",
+      "courses": [
+        "Python",
+        "Playwright"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Asad",
+      "location": "pakistan",
+      "phone": "0322222222",
+      "courses": [
+        "Java",
+        "Selenium"
+      ]
+    },
+    {
+      "id": "fe94",
+      "name": "shayan",
+      "location": "Lahore",
+      "phone": "039999999",
+      "courses": [
+        "React js",
+        "Anguler js"
+      ]
+    }
+  ]
 }
