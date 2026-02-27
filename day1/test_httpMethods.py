@@ -65,7 +65,7 @@ def test_update_user():
     assert "updated at"  in data, "Missing update info"
     print(data)
 
-
+#Delte request
 @pytest.mark.order(4)
 def test_delete_user():
     res = requests.delete(url="https://reqres.in/api/users/{user_id}", headers=HEADERS)
