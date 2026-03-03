@@ -28,3 +28,11 @@ class TestFileUploadDownload:
         data = response.json()
         print(data)
         
+    #file download
+    def test_file_download(self):
+        fileName = "Testfile1.txt"
+        response = requests.get(f"{self.BASE_URL}/downloadFile/{fileName}")
+        assert response.status_code == 200, "wrong status code"
+        output_path = f"downloaded_{fileName} "
+        with open(output_path, "wb") as file:
+            file.write(response.content)
