@@ -55,8 +55,7 @@ class TestXMLParsing:
 
     #Parse and valide more content from above api
     def test_xml_response_2(slef):
-            """
-            Validates:
+            """Validates:
             - HTTP Status code
             - Content Type
             - Specific XML elements
@@ -83,14 +82,12 @@ class TestXMLParsing:
 
             # validate items
             items = []
-
             for slide in slides:
                 item = slide.get("item", [])
                 if isinstance(item, str):
                     items.append(item)
                 else:
                     items.extend(item)
-
             print(items)
 
             assert len(items) == 3, "There shoud be 3 items"
