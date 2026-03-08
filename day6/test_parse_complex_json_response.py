@@ -50,7 +50,6 @@ class TestParseComplexJsonResponse:
         assert second_order_items['price'] == 799.99, "Price mismatch"
 
     def test_preferences_and_metadata_validation(self):
-
         # Validate Preferences --> Languages
         preferences = self.json_response['data']['userDetails']["address"]['prefrences']
         languages = preferences['languages']
@@ -62,6 +61,5 @@ class TestParseComplexJsonResponse:
 
         # Validate Metadata
         metadata = self.json_response['data']['userDetails']['meta']
-
         assert metadata['requestId'] == "abc123xyz"
         assert metadata['responseTimeMs'] == 250, "Response Time mismatch"

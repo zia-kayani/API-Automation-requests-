@@ -7,3 +7,5 @@ faker
 pytest
 pytest-order
 pytest-dependency
+xmltodict
+xmlschema 
